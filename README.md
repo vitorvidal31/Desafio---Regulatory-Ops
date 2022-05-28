@@ -61,3 +61,46 @@ As partes dentro do ecossistema do Pix são divididas da seguinte forma:
 * **Provedores de Serviços:** Softwares e instituições onde o usuário possui contas de pagamento.
 * **Infraestrutura e liquidação:** O Sistemas de Pagamentos Instantâneo do Pix.
 
+## **3.Principais Fluxos Transacionais**
+
+As transações com o Pix serão realizadas principalmente a partir dos seguintes modelos:
+
+* Chaves
+* Códigos QR estáticos
+* Códigos QR Dinâmicos
+* Pix saque e Pix troco
+
+A chave é o apelido dado a sua conta para que ela seja identificada dentro do Pix.
+Sua conta pode até ter 5 chaves caso seja de pessoa física. Para contas PJ podem ser usadas até 20 chaves diferentes. Desde que as chaves sejam diferentes para cada conta.
+
+O processo de efetivação do Pix é definido em dois fluxos:
+* Fluxo de geração de ordem de pagamento pelo usuário pagador;
+* Corresponde aos procedimentos executados pelo pagador para identificação do usuário recebedor.
+* Fluxo de efetivação do Pix;
+* Iniciado pelo prestador de serviço de pagamento (PSP) do pagador, após a geração da ordem de pagamento.
+
+Os códigos QR estáticos permitem que várias transações sejam realizadas a partir de um único código. Desse modo, é possível definir preços fixos para um produto ou mesmo deixar o pagador inserir um valor, o que é interessante para pequenas empresas, prestadores de serviço e pessoas físicas.
+
+Já os códigos QR dinâmicos são exclusivos para cada transação, só podem ser utilizados uma vez, pelo menos em teoria. Além do valor, é possível inserir outras informações como a identificação do beneficiário, por exemplo.
+
+Na prática o fluxo transacional por QR Code acontece da seguinte forma:
+
+* O recebedor gera os QR Codes por meio do app do seu PSP;
+* QR Code gerado mostra o nome da empresa geradora da cobrança e a PSP;
+* APP conta digital do pagador;
+* O cliente efetua o pagamento do QR code por meio do APP da sua conta digital;
+* As informações do pagamento são enviadas pelo PSP do pagador e a transação é liquidada no SPI (Bacen)
+* A PSP do recebedor recebe as informações da transação e disponibiliza o saldo para a empresa que envio a cobrança.
+
+Na categoria de Pix Saque e Pix troco, o cliente poderá ter a opção de retirada de dinheiro em espécie diretamente no estabelecimento comercial. O dinheiro em espécie corresponderá ao valor da transação Pix realizada. Enquanto que no Pix Troco, o valor entregue será a diferença entre o valor total do Pix em relação ao valor da compra realizada no estabelecimento. Vale ressaltar que essa categoria de Pix é facultativa para os estabelecimentos comerciais e estão relacionadas diretamente as transações por QR Code. 
+
+PIX | Disponível
+---|---
+Saque | QR estático ou dinâmico
+Troco | QR dinâmico
+
+Se o estabelecimento aceitar apenas chave Pix é necessário que este, verifique a integração para a geração de QR Code junto a instituição detentora da conta do estabelecimento para ajustar o contrato com a instituição (PSP) que realize o serviço facilitador de serviço de saque (FSS).
+
+Desta forma o fluxo de geração da ordem de pagamento pelo usuário pagador segue as seguintes modelos:
+
+
