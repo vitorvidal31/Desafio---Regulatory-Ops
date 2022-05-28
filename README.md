@@ -32,3 +32,32 @@ As IPs não sujeitas à autorização de funcionamento ou em processo de autoriz
 - [x] comprovar a integralização e a manutenção de, no mínimo, R$1.000.000,00 (um milhão de reais) de capital.
 
 A participação no Pix é obrigatória para as instituições financeiras e para as instituições de pagamento autorizadas a funcionar pelo Banco Central do Brasil com mais de quinhentas mil contas de clientes ativas. Consideradas as contas de depósito à vista, as contas de depósito de poupança e as contas de pagamento pré-pagas.
+
+## **2. Sistemas do Bacen responsáveis pelo PIX.**
+
+O Banco Central além de Regulador é também o Gestor das plataformas no âmbito do Pix. Pois é papel do mesmo promover as infraestruturas tecnológicas necessária para o funcionamento dos fluxos transacionais.
+
+O Pix possui três interfaces:
+
+* *DICT*
+   * DICT é o Diretório de Identificadores de Contas Transacionais.
+* *ICOM (Acesso ao SPI)*
+   * ICOM é a interface ISO 20022 que da acesso ao SPI, significa Sistema de Pagamento Instantâneo, sendo esta a infraestrutura de liquidação.
+* *ARQ*
+    * ARQ esta é a interface usada para se fazer download de arquivos que são gerados pelo SPI (gerado a partir de mensagem) ou pelo DICT (gerado a partir requisição).
+
+O ecossistema de pagamentos instantâneos é formado pelo Bacen, pelo Sistema Pagamentos Instantâneos (SPI), que faz a liquidação das transações realizadas entre diferentes instituições participantes de forma bruta e em tempo real, sem gerar exposição financeira entre os participantes, e também pelos prestadores de serviços de pagamento participantes do arranjo aberto instituído pelo BC. 
+Foi desenvolvido também o operador e gestor da base de dados única e centralizada de endereçamento do ecossistema (DICT). Onde ficam armazenadas as informações das chaves que servem para identificar as contas transacionais dos usuários de forma fácil e simplificada.
+
+Desta forma o Banco Central é responsável por desenvolver e gerenciar a base única e centralizada de endereçamento (DICT) e a infraestrutura única e centralizada de liquidação das transações (SPI), que funcionará 24 horas por dia, todos os dias do ano.
+
+
+As partes dentro do ecossistema do Pix são divididas da seguinte forma:
+
+* **Pagador:** quem paga ou transfere valores.
+* **Beneficiário:** quem recebe o valor.
+* **participantes diretos:** Instituições Financeiras que possuem contas no BACEN para liquidação.
+* **Participantes Indiretos:** Fintechs, Contas de Pagamento e outros que NÃO possuem conta no BACEN.
+* **Provedores de Serviços:** Softwares e instituições onde o usuário possui contas de pagamento.
+* **Infraestrutura e liquidação:** O Sistemas de Pagamentos Instantâneo do Pix.
+
