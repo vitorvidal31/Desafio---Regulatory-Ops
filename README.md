@@ -1,7 +1,7 @@
 # Desafio---Regulatory-Ops
 Desafio proposto pela Stone sobre conceitos e funcionalidades do PIX
 
-**1. Conceitos fundamentais sobre PIX**
+##**1. Conceitos fundamentais sobre PIX**##
 
 O PIX foi desenvolvido pelo Banco Central para ser um meio de pagamento amplo e prático. Onde os recursos são transferidos em poucos segundos, 24 horas por dia, 7 dias por semana.
 
