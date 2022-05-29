@@ -101,6 +101,72 @@ Troco | QR dinâmico
 
 Se o estabelecimento aceitar apenas chave Pix é necessário que este, verifique a integração para a geração de QR Code junto a instituição detentora da conta do estabelecimento para ajustar o contrato com a instituição (PSP) que realize o serviço facilitador de serviço de saque (FSS).
 
-Desta forma o fluxo de geração da ordem de pagamento pelo usuário pagador segue as seguintes modelos:
+Resumidamente, o cliente pagador usa a interface de um PSP, para fazer pagamentos e transferências. Esse PSP vai recorrer ao DICT para encontrar os dados da chave informada ou seja, a agência, a conta, o dígito e outros dados importantes.
+ 
+Em seguida, com as informações em mãos, o PSP do cliente pagador comunica ao Banco Central a intenção em fazer o Pix. Então, o SPI entra em cena para liquidar a transação e repassar o valor para a instituição do recebedor. Por fim, o PSP do recebedor valida os dados do destinatário e responde ao SPI se aceita ou não a transferência.
+
+Embora pareça um processo extenso e complicado, tudo isso acontece em poucos segundos e o dinheiro cai na conta do recebedor no mesmo instante. 
+Além da instantaneidade, encurtar o caminho que o dinheiro faz de uma conta até outra faz com que o custo de implementação seja menor. Isso torna o Pix mais econômico tanto para o banco, quanto para o usuário final.
+
+* *Fluxo de Efetivação do Pix*
+   * Fluxo de Transações entre participantes Diretos;
+   * Fluxo de Transações entre participantes Indiretos;
+   * Fluxo de Transações nos livros do PSP;
+   * Fluxo de Transações entre participantes indiretos com mesmo liquidante.
+
+*Por fim vale ressaltar as diferenças entre Pix com chave, Lendo QR code ou por meio de Indicação*
+
+Há algumas situações em que a dinâmica com o serviço de iniciação oferece uma experiência mais simples ao usuário. Por exemplo, se você está usando um aplicativo para troca de mensagens ou para efetuar uma compra, é mais simples iniciar a transação diretamente nesse próprio aplicativo e já ser redirecionado ao app do seu banco apenas para autenticar a transação do que precisar abrir manualmente o aplicativo do banco, selecionar a opção Pix, selecionar a forma desejada (digitar a chave ou via Pix copia e cola) e só então autenticar a transação. Ou seja, é mais uma forma de fazer um Pix que pretende facilitar ainda mais a realização de pagamentos e transferências.
+
+## **4. Qr-code dinâmico**
+
+### **_Criação_**
+---
+O QR Code dinâmico é personalizável, ou seja, ele pode ser modificado. Podem ser adicionada as informações do produto, do cliente, definir vencimentos, aplicado acréscimo como juros ou até mesmo desconto para o cliente. Ele funciona como se fosse um boleto bancário. Ideal para identificar de onde vem o pagamento. 
+
+A característica que define o QR Code dinâmico é sua flexibilidade. O QR Code dinâmico, em sua estrutura interna, é configurado com uma URL que é acessada no momento de sua leitura. Essa funcionalidade abre diversas possibilidades de uso, dado que as informações trazidas pela URL podem variar em função de diversos parâmetros, como nos exemplos supracitados. 
+
+O QR Code dinâmico necessita de uma integração com alguma PSP. Vale ressaltar que esse serviço não é obrigatoriamente oferecidos pelos PSP. Desta forma também é possível implementar uma integração manualmente sendo configurado através do PHP. Logo esse Qr Code é gerado consumindo API do prestador de serviço de pagamento do recebedor. Diferente do QR Code estático que é gerado direto no software utilizado.
+
+Para gerar esses QR code, o sistema de automação da empresa vai gerar o QR através da integração com a Pix API. Essa API é disponibilizada pelo banco onde a pessoa recebe o Pix. A Pix API é padronizada pelo BACEN, permite a criação de QR code dinâmico individual ou em lote ajudando a verificar o recebimento de todos os QR codes, e ainda suporte em processos de devolução. Uma das grandes vantagens dessa API é que ela não te deixa amarrada a nenhum Banco, caso o usuário queira mudar o recebimento para outra instituição o API será a mesma. Não precisando adaptar o sistema para outra API.
+
+Para *criar a integracao* com a PSP é necessário acessar o repositório Pix API no github do Banco Central (inserir link). Para se ter acesso a especificação do API Pix. Garantindo assim um padrão entre todos os PSP.
+
+* Dados para criação do QR Code
+   * URL base do PSP
+   * Client ID e Client Secret (Autenticação ou autorização Alf 2 dentro da API do Pix)
+   * Certificado TLS 1.2 ou superior (Emitido pelo PSP para assinar as requisições e manter o acordo de segurança exigido pelo BC)
+   * Chave Pix cadastrada no PSP (Qualquer chave)
+
+Desta forma com esses dados em mãos o programador devera criar uma classe dentro do PSP, para gerenciar a comunicação com o API Pix. Para que as cobranças esteja de acordo com a documentação presente no repositório do BACEN no github (inserir link), e o recurso a ser utilizado esta na área da CobPayload, Cob, put / Cob/ Txid.
+
+Para efeito de ilustração segue a baixo a pagina onde se localiza o recurso citado.
+
+
+   ![Imagem COB 5](https://user-images.githubusercontent.com/105951194/170846805-8555981a-f970-4a28-8e8f-1b94f5cdcb71.png)
+
+### **_Fluxo de pagamento e recebimento_**
+---
+
+1. O usuário pagador, ao realizar a compra, informa que deseja pagar com Pix; 
+1. O software de automação utilizado pelo usuário recebedor acessa a API Pix para criação de uma cobrança e, com os dados recebidos como resposta, gera um QR Code Dinâmico, que é apresentado em um dispositivo de exibição qualquer:
+   1. em uma compra presencial, tipicamente uma tela próxima ao caixa ou mesmo um POS;
+   2. nas compras online, no dispositivo em uso pelo pagador. 
+3. O usuário pagador lê, a seguir, o QR Code com o App do seu PSP e efetua o pagamento; 
+4. O usuário recebedor, de forma automatizada, por meio de nova consulta à API Pix, verifica se o pagamento foi realizado:
+5. O usuário recebedor libera os produtos para o usuário pagador ou, no caso das compras online, confirma o recebimento do pagamento. 
+
+Para apresentar visualmente o processo supracitado segue a ilustracao.
+
+![fluxo na API de recebimentos ](https://user-images.githubusercontent.com/105951194/170847025-922ced02-55a7-48a9-a41f-6eaeff3ce0a3.png)
+
+## **5. Principais regulamentações e seus pontos mais relevantes**
+
+Por meio da [RESOLUÇÃO BCB Nº 1, DE 12 DE AGOSTO DE 2020](https://www.in.gov.br/en/web/dou/-/resolucao-bcb-n-1-de-12-de-agosto-de-2020-271965371), o BC estabelece a criação de vários manuais técnicos, os quais complementam a regulamentação do PIX e organiza o ecossistema brasileiro de pagamentos instantâneos em quatro estruturas:
+
+* a plataforma PIX;
+* o provedor responsável por liquidar as transações realizadas entre diferentes instituições participantes do SPI;
+* o diretório de identificadores de contas transacionais (DICT), que armazenará as informações das chaves PIX e dos dispositivos que identificarão as contas dos usuários recebedores;
+* as instituições prestadoras de serviços de pagamento do arranjo.
 
 
