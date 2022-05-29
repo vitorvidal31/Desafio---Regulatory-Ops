@@ -33,7 +33,7 @@ As IPs não sujeitas à autorização de funcionamento ou em processo de autoriz
 
 A participação no Pix é obrigatória para as instituições financeiras e para as instituições de pagamento autorizadas a funcionar pelo Banco Central do Brasil com mais de quinhentas mil contas de clientes ativas. Consideradas as contas de depósito à vista, as contas de depósito de poupança e as contas de pagamento pré-pagas.
 
-## **2. Sistemas do Bacen responsáveis pelo PIX.**
+## **2. Sistemas do Bacen responsáveis pelo PIX**
 
 O Banco Central além de Regulador é também o Gestor das plataformas no âmbito do Pix. Pois é papel do mesmo promover as infraestruturas tecnológicas necessária para o funcionamento dos fluxos transacionais.
 
