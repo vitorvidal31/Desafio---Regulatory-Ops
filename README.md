@@ -235,4 +235,4 @@ Assim, as liquidações de operações no STR é realizada por meio de lançamen
 
 A Conta de Liquidação obrigatória, para câmaras e prestadores de serviços de compensação e de liquidação responsáveis por sistemas de liquidação considerados sistemicamente importantes e facultativa, para as demais câmaras e prestadores de serviços de compensação e de liquidação e para as instituições autorizadas a funcionar pelo Banco Central do Brasil.
 
-Desta forma a relação principal das contas de pagamento instantâneo com a conta de liquidação ocorre por ser através dela que se realiza a Movimentação de Recursos entre o Banco Central e os as contas de Reserva Bancarias ou de Conta de Liquidação é realizada de forma exclusiva entre elas.
+Desta forma a relação das contas de pagamento instantâneo com a conta de liquidação e reserva é de ligação intrínseca, por ser através dela que se realiza a Movimentação de Recursos entre o Banco Central e as contas de Reserva Bancarias ou de Conta de Liquidação das PSP envolvidas nas transações para que seja realizada a movimentação de Moeda eletrônica entre as contas dos usuários finais que deram ínicio a transação Pix.
