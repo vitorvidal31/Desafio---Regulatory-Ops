@@ -79,7 +79,9 @@ O processo de efetivação do Pix é definido em dois fluxos:
 * Fluxo de efetivação do Pix;
    * Iniciado pelo prestador de serviço de pagamento (PSP) do pagador, após a geração da ordem de pagamento.
 
-> A chave Pix é uma das formas de identificar a conta bancária do usuário recebedor e agilizar as transações pelo Pix. Nesse sentido o pagador deverá pedir ao recebedor a chave que identifica a conta bancária dele. Após esse momento, no aplicativo do PSP do pagador, selecionar o tipo de chave informada, e inseri-la no campo soliciado. Confirmando os dados do recebedor o pagador finaliza a ordem de pagamento. Este costuma ser o fluxo transacional mais simples e comum para os usuários do Pix. 
+> A chave Pix é uma das formas de identificar a conta bancária do usuário recebedor e agilizar as transações pelo Pix. Nesse sentido o pagador deverá pedir ao recebedor a chave que identifica a conta bancária dele. Após esse momento, no aplicativo do PSP do pagador, selecionar o tipo de chave informada, e inseri-la no campo soliciado. Confirmando os dados do recebedor o pagador finaliza a ordem de pagamento. Este costuma ser o fluxo transacional mais simples e comum para os usuários do Pix.
+
+Há algumas situações em que a dinâmica com o serviço de iniciação oferece uma experiência mais simples ao usuário. Por exemplo, se você está usando um aplicativo para troca de mensagens ou para efetuar uma compra, é mais simples iniciar a transação diretamente nesse próprio aplicativo e já ser redirecionado ao app do seu banco apenas para autenticar a transação do que precisar abrir manualmente o aplicativo do banco, selecionar a opção Pix, selecionar a forma desejada (digitar a chave ou via Pix copia e cola) e só então autenticar a transação. Ou seja, é mais uma forma de fazer um Pix, ainda utilizando chave, que pretende facilitar ainda mais a realização de pagamentos e transferências.
 
 > Os códigos QR estáticos permitem que várias transações sejam realizadas a partir de um único código. Desse modo, é possível definir preços fixos para um produto ou mesmo deixar o pagador inserir um valor, o que é interessante para pequenas empresas, prestadores de serviço e pessoas físicas.
 
@@ -94,18 +96,16 @@ Na prática o fluxo transacional por QR Code acontece da seguinte forma:
 5. As informações do pagamento são enviadas pelo PSP do pagador e a transação é liquidada no SPI.
 6. A PSP do recebedor recebe as informações da transação e disponibiliza o saldo para a empresa que envio a cobrança.
 
-Na categoria de Pix Saque e Pix troco, o cliente poderá ter a opção de retirada de dinheiro em espécie diretamente no estabelecimento comercial. O dinheiro em espécie corresponderá ao valor da transação Pix realizada. Enquanto que no Pix Troco, o valor entregue será a diferença entre o valor total do Pix em relação ao valor da compra realizada no estabelecimento. Vale ressaltar que essa categoria de Pix é facultativa para os estabelecimentos comerciais e estão relacionadas diretamente as transações por QR Code. 
+> Na categoria de Pix Saque e Pix troco, o cliente poderá ter a opção de retirada de dinheiro em espécie diretamente no estabelecimento comercial. O dinheiro em espécie corresponderá ao valor da transação Pix realizada. Enquanto que no Pix Troco, o valor entregue será a diferença entre o valor total do Pix em relação ao valor da compra realizada no estabelecimento. Vale ressaltar que essa categoria de Pix é facultativa para os estabelecimentos comerciais e estão relacionadas diretamente as transações por QR Code. 
 
 PIX | Disponível
 ---|---
 Saque | QR estático ou dinâmico
 Troco | QR dinâmico
 
-Se o estabelecimento aceitar apenas chave Pix é necessário que este, verifique a integração para a geração de QR Code junto a instituição detentora da conta do estabelecimento para ajustar o contrato com a instituição (PSP) que realize o serviço facilitador de serviço de saque (FSS).
+Se o estabelecimento aceitar apenas chave Pix é necessário que este, verifique a integração para a geração de QR Code junto a instituição detentora da conta do estabelecimento para ajustar o contrato com a instituição (PSP) que realize o facilitador de serviço de saque (FSS).
 
-Resumidamente, o cliente pagador usa a interface de um PSP, para fazer pagamentos e transferências. Esse PSP vai recorrer ao DICT para encontrar os dados da chave informada ou seja, a agência, a conta, o dígito e outros dados importantes.
- 
-Em seguida, com as informações em mãos, o PSP do cliente pagador comunica ao Banco Central a intenção em fazer o Pix. Então, o SPI entra em cena para liquidar a transação e repassar o valor para a instituição do recebedor. Por fim, o PSP do recebedor valida os dados do destinatário e responde ao SPI se aceita ou não a transferência.
+Resumidamente, o cliente pagador usa a interface de um PSP, para fazer pagamentos e transferências. Esse PSP vai recorrer ao DICT para encontrar os dados da chave informada ou seja, a agência, a conta, o dígito e outros dados importantes. Em seguida, com as informações em mãos, o PSP do cliente pagador comunica ao Banco Central a intenção em fazer o Pix. Então, o SPI entra em cena para liquidar a transação e repassar o valor para a instituição do recebedor. Por fim, o PSP do recebedor valida os dados do destinatário e responde ao SPI se aceita ou não a transferência.
 
 Embora pareça um processo extenso e complicado, tudo isso acontece em poucos segundos e o dinheiro cai na conta do recebedor no mesmo instante. 
 Além da instantaneidade, encurtar o caminho que o dinheiro faz de uma conta até outra faz com que o custo de implementação seja menor. Isso torna o Pix mais econômico tanto para o banco, quanto para o usuário final.
@@ -115,10 +115,6 @@ Além da instantaneidade, encurtar o caminho que o dinheiro faz de uma conta at�
    * Fluxo de Transações entre participantes Indiretos;
    * Fluxo de Transações nos livros do PSP;
    * Fluxo de Transações entre participantes indiretos com mesmo liquidante.
-
-*Por fim vale ressaltar as diferenças entre Pix com chave, Lendo QR code ou por meio de Indicação*
-
-Há algumas situações em que a dinâmica com o serviço de iniciação oferece uma experiência mais simples ao usuário. Por exemplo, se você está usando um aplicativo para troca de mensagens ou para efetuar uma compra, é mais simples iniciar a transação diretamente nesse próprio aplicativo e já ser redirecionado ao app do seu banco apenas para autenticar a transação do que precisar abrir manualmente o aplicativo do banco, selecionar a opção Pix, selecionar a forma desejada (digitar a chave ou via Pix copia e cola) e só então autenticar a transação. Ou seja, é mais uma forma de fazer um Pix que pretende facilitar ainda mais a realização de pagamentos e transferências.
 
 ## **4. Qr-code dinâmico**
 
