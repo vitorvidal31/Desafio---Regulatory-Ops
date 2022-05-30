@@ -153,7 +153,7 @@ Para efeito de ilustração segue a baixo a pagina onde se localiza o recurso ci
    1. em uma compra presencial, tipicamente uma tela próxima ao caixa ou mesmo um POS;
    2. nas compras online, no dispositivo em uso pelo pagador. 
 3. O usuário pagador lê, a seguir, o QR Code com o App do seu PSP e efetua o pagamento; 
-4. O usuário recebedor, de forma automatizada, por meio de nova consulta à API Pix, verifica se o pagamento foi realizado:
+4. O usuário recebedor, de forma automatizada, por meio de nova consulta à API Pix, verifica se o pagamento foi realizado;
 5. O usuário recebedor libera os produtos para o usuário pagador ou, no caso das compras online, confirma o recebimento do pagamento. 
 
 Para apresentar visualmente o processo supracitado segue a ilustracao.
