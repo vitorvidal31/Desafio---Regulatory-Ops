@@ -79,7 +79,7 @@ O processo de efetivação do Pix é definido em dois fluxos:
 * Fluxo de efetivação do Pix;
    * Iniciado pelo prestador de serviço de pagamento (PSP) do pagador, após a geração da ordem de pagamento.
 
-> A chave Pix é uma das formas de identificar a conta bancária do usuário recebedor e agilizar as transações pelo Pix. Nesse sentido o pagador deverá pedir ao recebedor a chave que identifica a conta bancária dele. Após esse momento, no aplicativo do PSP do pagador, deverá selecionar o tipo de chave informada, e inseri-la no campo soliciado. Confirmando os dados do recebedor o pagador finaliza a ordem de pagamento. Está costuma ser o fluxo transacional mais simples e comum para os usuários do Pix. 
+> A chave Pix é uma das formas de identificar a conta bancária do usuário recebedor e agilizar as transações pelo Pix. Nesse sentido o pagador deverá pedir ao recebedor a chave que identifica a conta bancária dele. Após esse momento, no aplicativo do PSP do pagador, selecionar o tipo de chave informada, e inseri-la no campo soliciado. Confirmando os dados do recebedor o pagador finaliza a ordem de pagamento. Este costuma ser o fluxo transacional mais simples e comum para os usuários do Pix. 
 
 > Os códigos QR estáticos permitem que várias transações sejam realizadas a partir de um único código. Desse modo, é possível definir preços fixos para um produto ou mesmo deixar o pagador inserir um valor, o que é interessante para pequenas empresas, prestadores de serviço e pessoas físicas.
 
@@ -87,12 +87,12 @@ O processo de efetivação do Pix é definido em dois fluxos:
 
 Na prática o fluxo transacional por QR Code acontece da seguinte forma:
 
-* O recebedor gera os QR Codes por meio do app do seu PSP;
-* QR Code gerado mostra o nome da empresa geradora da cobrança e a PSP;
-* APP conta digital do pagador;
-* O cliente efetua o pagamento do QR code por meio do APP da sua conta digital;
-* As informações do pagamento são enviadas pelo PSP do pagador e a transação é liquidada no SPI (Bacen)
-* A PSP do recebedor recebe as informações da transação e disponibiliza o saldo para a empresa que envio a cobrança.
+1. O recebedor gera os QR Codes por meio do app do seu PSP;
+2. QR Code gerado mostra o nome da empresa geradora da cobrança e a PSP;
+3. APP conta digital do pagador;
+4. O cliente efetua o pagamento do QR code por meio do APP da sua conta digital;
+5. As informações do pagamento são enviadas pelo PSP do pagador e a transação é liquidada no SPI.
+6. A PSP do recebedor recebe as informações da transação e disponibiliza o saldo para a empresa que envio a cobrança.
 
 Na categoria de Pix Saque e Pix troco, o cliente poderá ter a opção de retirada de dinheiro em espécie diretamente no estabelecimento comercial. O dinheiro em espécie corresponderá ao valor da transação Pix realizada. Enquanto que no Pix Troco, o valor entregue será a diferença entre o valor total do Pix em relação ao valor da compra realizada no estabelecimento. Vale ressaltar que essa categoria de Pix é facultativa para os estabelecimentos comerciais e estão relacionadas diretamente as transações por QR Code. 
 
