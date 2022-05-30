@@ -208,9 +208,9 @@ O SPI faz a liquidação bruta e em tempo real de cada transação instantânea,
 Tendo em vista que o BACEN tem principalmente dois grandes sistemas que participam do ecossistema de pagamentos instantâneos: SPI e DICT Cada um com sua responsabilidade pré definida, realizam um papel chave para o funcionamento geral das transações instantâneas no Brasil. 
 Logo a Finalidade  da SPI é garantir a comunicação entre as PSP e os sistemas operados pelo BCB através da Rede Do Sistema Financeiro Nacional (RSFN) para que através desta as PSP tenham acesso ao DICT de forma direta ou indireta para garantir o pleno funcionamento do Pix em todo Brasil.
 
-> Participação no SPI
+>**Formas de acesso ao SPI**
 
-![IMAGEM PARTICIPA SPI](https://user-images.githubusercontent.com/105951194/170847706-caa1b791-cd45-4452-af18-3f4ef3f5e7ab.png)
+![Formas de acesso ao SPI](https://user-images.githubusercontent.com/105951194/171066590-c6967304-ed93-459e-9d92-f2c2f6ccf92b.png)
 
 O STR é onde acontece a liquidação final de todas as operações que são transacionadas pelas instituições financeiras. Ele é responsável pela transferências de fundos com liquidação bruta em tempo real. É nesse sistema que acontece a transferencia de balanço entre os bancos. O Sistema de Transferência de Reserva é considerado o coração do Sistema Brasileiro de Pagamentos, por ser onde ocorre a liquidação final de todas as obrigações financeiras no Brasil.
 
@@ -222,7 +222,7 @@ O objetivo é ofertar liquidez fora do horário de operações do Sistema de Tra
 
 O acesso ao STR é feito por meio da Rede do Sistema Financeiro Nacional (RSFN) ou pela Internet. Os detentores de conta Reservas Bancárias e as câmaras e prestadores de serviços de compensação e de liquidação devem obrigatoriamente acessar o STR por meio da RSFN, e os demais podem optar entre as duas formas de acesso.
 
->Estrutura do STR
+>**Estrutura do STR**
 
 ![ESTRUTURA DO STR](https://user-images.githubusercontent.com/105951194/170847736-f5e8d78a-c197-430f-b7d4-fc0b631d3e39.png)
 
