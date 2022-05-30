@@ -120,15 +120,15 @@ Além da instantaneidade, encurtar o caminho que o dinheiro faz de uma conta at�
 
 ### **_Criação_**
 ---
-O QR Code dinâmico é personalizável, ou seja, ele pode ser modificado. Podem ser adicionada as informações do produto, do cliente, definir vencimentos, aplicado acréscimo como juros ou até mesmo desconto para o cliente. Ele funciona como se fosse um boleto bancário. Ideal para identificar de onde vem o pagamento. 
+O QR Code dinâmico é personalizável, ou seja, ele pode ser modificado. Podem ser adicionada as informações do produto, do cliente, definir vencimentos, aplicar acréscimo como juros ou até mesmo desconto para o cliente. Ele funciona como se fosse um boleto bancário. Ideal para identificar de onde vem o pagamento. 
 
 A característica que define o QR Code dinâmico é sua flexibilidade. O QR Code dinâmico, em sua estrutura interna, é configurado com uma URL que é acessada no momento de sua leitura. Essa funcionalidade abre diversas possibilidades de uso, dado que as informações trazidas pela URL podem variar em função de diversos parâmetros, como nos exemplos supracitados. 
 
 O QR Code dinâmico necessita de uma integração com alguma PSP. Vale ressaltar que esse serviço não é obrigatoriamente oferecidos pelos PSP. Desta forma também é possível implementar uma integração manualmente sendo configurado através do PHP. Logo esse Qr Code é gerado consumindo API do prestador de serviço de pagamento do recebedor. Diferente do QR Code estático que é gerado direto no software utilizado.
 
-Para gerar esses QR code, o sistema de automação da empresa vai gerar o QR através da integração com a Pix API. Essa API é disponibilizada pelo banco onde a pessoa recebe o Pix. A Pix API é padronizada pelo BACEN, permite a criação de QR code dinâmico individual ou em lote ajudando a verificar o recebimento de todos os QR codes, e ainda suporte em processos de devolução. Uma das grandes vantagens dessa API é que ela não te deixa amarrada a nenhum Banco, caso o usuário queira mudar o recebimento para outra instituição o API será a mesma. Não precisando adaptar o sistema para outra API.
+Para gerar esses QR code, o sistema de automação da empresa vai gerar o QR através da integração com a Pix API. Essa API é disponibilizada pelo banco onde a pessoa recebe o Pix. A Pix API é padronizada pelo BACEN, permite a criação de QR code dinâmico individual ou em lote ajudando a verificar o recebimento de todos os QR codes, e ainda suporte em processos de devolução. Uma das grandes vantagens dessa API é que ela não te deixa amarrado a nenhum Banco, caso o usuário queira mudar o recebimento para outra instituição o API será a mesma. Não precisando adaptar o sistema para outra API.
 
-Para *criar a integracao* com a PSP é necessário acessar o repositório Pix API no github do Banco Central (inserir link). Para se ter acesso a especificação do API Pix. Garantindo assim um padrão entre todos os PSP.
+Para *criar a integracao* com a PSP é necessário acessar o repositório Pix API no [github do Banco Central](https://github.com/bacen/pix-api)). Para se ter acesso a especificação do API Pix. Garantindo assim um padrão entre todos os PSP.
 
 * Dados para criação do QR Code
    * URL base do PSP
@@ -136,12 +136,7 @@ Para *criar a integracao* com a PSP é necessário acessar o repositório Pix AP
    * Certificado TLS 1.2 ou superior (Emitido pelo PSP para assinar as requisições e manter o acordo de segurança exigido pelo BC)
    * Chave Pix cadastrada no PSP (Qualquer chave)
 
-Desta forma com esses dados em mãos o programador devera criar uma classe dentro do PSP, para gerenciar a comunicação com o API Pix. Para que as cobranças esteja de acordo com a documentação presente no repositório do BACEN no github (inserir link), e o recurso a ser utilizado esta na área da CobPayload, Cob, put / Cob/ Txid.
-
-Para efeito de ilustração segue a baixo a pagina onde se localiza o recurso citado.
-
-
-   ![Imagem COB 5](https://user-images.githubusercontent.com/105951194/170846805-8555981a-f970-4a28-8e8f-1b94f5cdcb71.png)
+Desta forma com esses dados em mãos o programador devera criar uma classe dentro do PSP, para gerenciar a comunicação com o API Pix. Para que as cobranças esteja de acordo com a documentação presente no [repositório](https://bacen.github.io/pix-api/index.html) do BACEN no github, e o recurso a ser utilizado esta na área da CobPayload, Cob, put / Cob/ Txid.
 
 ### **_Fluxo de pagamento e recebimento_**
 ---
