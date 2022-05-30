@@ -79,9 +79,11 @@ O processo de efetivação do Pix é definido em dois fluxos:
 * Fluxo de efetivação do Pix;
    * Iniciado pelo prestador de serviço de pagamento (PSP) do pagador, após a geração da ordem de pagamento.
 
-Os códigos QR estáticos permitem que várias transações sejam realizadas a partir de um único código. Desse modo, é possível definir preços fixos para um produto ou mesmo deixar o pagador inserir um valor, o que é interessante para pequenas empresas, prestadores de serviço e pessoas físicas.
+> A chave Pix é uma das formas de identificar a conta bancária do usuário recebedor e agilizar as transações pelo Pix. Nesse sentido o pagador deverá pedir ao recebedor a chave que identifica a conta bancária dele. Após esse momento, no aplicativo do PSP do pagador, deverá selecionar o tipo de chave informada, e inseri-la no campo soliciado. Confirmando os dados do recebedor o pagador finaliza a ordem de pagamento. Está costuma ser o fluxo transacional mais simples e comum para os usuários do Pix. 
 
-Já os códigos QR dinâmicos são exclusivos para cada transação, só podem ser utilizados uma vez, pelo menos em teoria. Além do valor, é possível inserir outras informações como a identificação do beneficiário, por exemplo.
+> Os códigos QR estáticos permitem que várias transações sejam realizadas a partir de um único código. Desse modo, é possível definir preços fixos para um produto ou mesmo deixar o pagador inserir um valor, o que é interessante para pequenas empresas, prestadores de serviço e pessoas físicas.
+
+> Já os códigos QR dinâmicos são exclusivos para cada transação, só podem ser utilizados uma vez, pelo menos em teoria. Além do valor, é possível inserir outras informações como a identificação do beneficiário, por exemplo.
 
 Na prática o fluxo transacional por QR Code acontece da seguinte forma:
 
