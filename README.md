@@ -128,7 +128,7 @@ O QR Code dinâmico necessita de uma integração com alguma PSP. Vale ressaltar
 
 Para gerar esses QR code, o sistema de automação da empresa vai gerar o QR através da integração com a Pix API. Essa API é disponibilizada pelo banco onde a pessoa recebe o Pix. A Pix API é padronizada pelo BACEN, permite a criação de QR code dinâmico individual ou em lote ajudando a verificar o recebimento de todos os QR codes, e ainda suporte em processos de devolução. Uma das grandes vantagens dessa API é que ela não te deixa amarrado a nenhum Banco, caso o usuário queira mudar o recebimento para outra instituição o API será a mesma. Não precisando adaptar o sistema para outra API.
 
-Para *criar a integracao* com a PSP é necessário acessar o repositório Pix API no [github do Banco Central](https://github.com/bacen/pix-api)). Para se ter acesso a especificação do API Pix. Garantindo assim um padrão entre todos os PSP.
+Para *criar a integracao* com a PSP é necessário acessar o repositório Pix API no [github do Banco Central](https://github.com/bacen/pix-api). Para se ter acesso a especificação do API Pix. Garantindo assim um padrão entre todos os PSP.
 
 * Dados para criação do QR Code
    * URL base do PSP
