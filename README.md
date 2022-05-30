@@ -1,5 +1,5 @@
 # Desafio-Regulatory Ops
-Desafio proposto pela Stone sobre conceitos e funcionalidades do PIX
+Desafio proposto pela Stone sobre conceitos e funcionalidades do PIX.
 
 ## **1. Conceitos fundamentais sobre PIX**
 
