@@ -42,11 +42,11 @@ O Pix possui três interfaces:
 * *DICT*
    * DICT é o Diretório de Identificadores de Contas Transacionais.
 * *ICOM (Acesso ao SPI)*
-   * ICOM é a interface ISO 20022 que da acesso ao SPI, significa Sistema de Pagamento Instantâneo, sendo esta a infraestrutura de liquidação.
+   * ICOM é a interface ISO 20022 que da acesso ao SPI, Sistema de Pagamento Instantâneo, sendo esta a infraestrutura de liquidação.
 * *ARQ*
     * ARQ esta é a interface usada para se fazer download de arquivos que são gerados pelo SPI (gerado a partir de mensagem) ou pelo DICT (gerado a partir requisição).
 
-O ecossistema de pagamentos instantâneos é formado pelo Bacen, pelo Sistema Pagamentos Instantâneos (SPI), que faz a liquidação das transações realizadas entre diferentes instituições participantes de forma bruta e em tempo real, sem gerar exposição financeira entre os participantes, e também pelos prestadores de serviços de pagamento participantes do arranjo aberto instituído pelo BC. 
+O ecossistema de pagamentos instantâneos formado pelo Bacen, Sistema Pagamentos Instantâneos (SPI), que faz a liquidação das transações realizadas entre diferentes instituições participantes de forma bruta e em tempo real, sem gerar exposição financeira entre os participantes, e também pelos prestadores de serviços de pagamento participantes do arranjo aberto instituído pelo BC. 
 Foi desenvolvido também o operador e gestor da base de dados única e centralizada de endereçamento do ecossistema (DICT). Onde ficam armazenadas as informações das chaves que servem para identificar as contas transacionais dos usuários de forma fácil e simplificada.
 
 Desta forma o Banco Central é responsável por desenvolver e gerenciar a base única e centralizada de endereçamento (DICT) e a infraestrutura única e centralizada de liquidação das transações (SPI), que funcionará 24 horas por dia, todos os dias do ano.
@@ -70,14 +70,14 @@ As transações com o Pix serão realizadas principalmente a partir dos seguinte
 * Códigos QR Dinâmicos
 * Pix saque e Pix troco
 
-A chave é o apelido dado a sua conta para que ela seja identificada dentro do Pix.
-Sua conta pode até ter 5 chaves caso seja de pessoa física. Para contas PJ podem ser usadas até 20 chaves diferentes. Desde que as chaves sejam diferentes para cada conta.
+A chave é o apelido dado a conta para que ela seja identificada dentro do Pix.
+Está conta pode ter até 5 chaves caso seja de pessoa física. Para contas PJ podem ser usadas até 20 chaves diferentes. Desde que as chaves sejam diferentes para cada conta.
 
 O processo de efetivação do Pix é definido em dois fluxos:
 * Fluxo de geração de ordem de pagamento pelo usuário pagador;
-* Corresponde aos procedimentos executados pelo pagador para identificação do usuário recebedor.
+   * Procedimentos executados pelo pagador para identificação do usuário recebedor.
 * Fluxo de efetivação do Pix;
-* Iniciado pelo prestador de serviço de pagamento (PSP) do pagador, após a geração da ordem de pagamento.
+   * Iniciado pelo prestador de serviço de pagamento (PSP) do pagador, após a geração da ordem de pagamento.
 
 Os códigos QR estáticos permitem que várias transações sejam realizadas a partir de um único código. Desse modo, é possível definir preços fixos para um produto ou mesmo deixar o pagador inserir um valor, o que é interessante para pequenas empresas, prestadores de serviço e pessoas físicas.
 
