@@ -143,7 +143,7 @@ Desta forma com esses dados em mãos o programador devera criar uma classe dentr
 
 1. O usuário pagador, ao realizar a compra, informa que deseja pagar com Pix; 
 1. O software de automação utilizado pelo usuário recebedor acessa a API Pix para criação de uma cobrança e, com os dados recebidos como resposta, gera um QR Code Dinâmico, que é apresentado em um dispositivo de exibição qualquer:
-   1. em uma compra presencial, tipicamente uma tela próxima ao caixa ou mesmo um POS;
+   1. em uma compra presencial, tipicamente uma tela próxima ao caixa;
    2. nas compras online, no dispositivo em uso pelo pagador. 
 3. O usuário pagador lê, a seguir, o QR Code com o App do seu PSP e efetua o pagamento; 
 4. O usuário recebedor, de forma automatizada, por meio de nova consulta à API Pix, verifica se o pagamento foi realizado;
@@ -166,18 +166,17 @@ Através desta resolução ficam definidas as bases normativas para a regulament
 
 Porém além das normas contidas na Resolução citada compõem o regulamento do Pix os seguintes Manuais:
 
-* Manual de Uso da Marca;
-* Manual de Padrões para Iniciação do Pix;
-* Manual de Fluxos do Processo de Efetivação do Pix;
-* Requisitos Mínimos para a Experiência do Usuário;
-* Manual de Redes do SFN;
-* Manual de Segurança do SFN;
-* Catálogo de Serviços do SFN;
-* Manual das Interfaces de Comunicação;
-* Manual de Tempos do Pix;
-* Manual Operacional do DICT;
-* Manual de Resolução de Disputas; 
-* Manual de Penalidades.
+* [Manual de Uso da Marca;](https://www.bcb.gov.br/content/estabilidadefinanceira/pix/Regulamento_Pix/I_manual_uso_marca_pix.pdf)
+* [Manual de Padrões para Iniciação do Pix;](https://www.bcb.gov.br/content/estabilidadefinanceira/pix/Regulamento_Pix/II_ManualdePadroesparaIniciacaodoPix.pdf)
+* [Manual de Fluxos do Processo de Efetivação do Pix;](https://www.bcb.gov.br/content/estabilidadefinanceira/pix/Regulamento_Pix/III_ManualdeFluxosdoProcessodeEfetivacaodoPix.pdf)
+* [Requisitos Mínimos para a Experiência do Usuário;](https://www.bcb.gov.br/content/estabilidadefinanceira/pix/Regulamento_Pix/IV_RequisitosMinimosparaExperienciadoUsuario.pdf)
+* [Manual de Redes e Segurança do SFN;](https://www.bcb.gov.br/estabilidadefinanceira/comunicacaodados)
+* [Catálogo de Serviços do SFN;](https://www.bcb.gov.br/estabilidadefinanceira/comunicacaodados)
+* [Manual das Interfaces de Comunicação;](https://www.bcb.gov.br/estabilidadefinanceira/comunicacaodados)
+* [Manual de Tempos do Pix;](https://www.bcb.gov.br/content/estabilidadefinanceira/pix/Regulamento_Pix/IX_ManualdeTemposdoPix.pdf)
+* [Manual Operacional do DICT;](https://www.bcb.gov.br/content/estabilidadefinanceira/pix/Regulamento_Pix/X_ManualOperacionaldoDICT.pdf)
+* [Manual de Resolução de Disputas;](https://www.bcb.gov.br/content/estabilidadefinanceira/pix/Regulamento_Pix/XI_Manual_de_resolucao_de_disputa.pdf)
+* [Manual de Penalidades.](https://www.bcb.gov.br/estabilidadefinanceira/exibenormativo?tipo=Resolução%20BCB&numero=177)
 
 Desta forma, vale ressaltar, que todos os Manuais tem sua importância determinada para o funcionamento do Pix de forma padronizada e qualitativa. Tendo em vista que sem eles poderia se criar um terreno fértil de possibilidades para fraudes e diversas funcionalidades escusas inerentes a operação que se propõem a criação do Pix.
 
