@@ -184,7 +184,7 @@ Entretanto alguns manuais e regulamentações são mais importantes por possuir 
 
 >   * O Manual de Uso da Marca. Onde se regula a forma de uso da Marca pix em um padrão normativo pré estabelecido para trazer orientações para o uso coerente e consistente da marca Pix e seus elementos visuais. Para garantir a construção da personalidade e da experiencia Pix na mente de todos os usuários.
 >
->   * Outro ponto de extrema importância é o Manual de Padrões para a iniciação do Pix. Por ser através dele que teremos as informações necessárias para a Iniciação do pagamento por Pix. Seja ela a forma que o usuário for usar. Estão presentes neste documentos os termos e parâmetros técnicos para determinar a funcionalidade das transações realizadas pelo Pix. Determina ainda os conceitos de negócio do API Pix. Os Casos de uso para cada forma de pagamento seja QR Code Estático ou Dinâmico, devolução ou remoção/alteração de cobrança. Contém ainda as Especificações técnicas de protocolos e tecnologias envolvidas, os requisitos e recomendações de segurança visando boas praticas de segurança para garantir o pleno funcionamento e desenvolvimento da API Pix.
+>   * Outro ponto de extrema importância é o Manual de Padrões para a iniciação do Pix. Por ser através dele que teremos as informações necessárias para a iniciação do pagamento por Pix. Seja ela a forma que o usuário for usar. Estão presentes neste documentos os termos e parâmetros técnicos para determinar a funcionalidade das transações realizadas pelo Pix. Determina ainda os conceitos de negócio do API Pix. Os Casos de uso para cada forma de pagamento seja QR Code Estático ou Dinâmico, devolução ou remoção/alteração de cobrança. Contém ainda as Especificações técnicas de protocolos e tecnologias envolvidas, os requisitos e recomendações de segurança visando boas praticas de segurança para garantir o pleno funcionamento e desenvolvimento da API Pix.
 > 
 >    * O conhecimento do Manual de Fluxo do Processo de Efetivação é outro ponto que vale ser ressaltado. Contendo nele os processos de efetivação do Pix e seus procedimentos a serem realizados. Como o Fluxo de Geração da ordem de pagamento pelo usuário. O Fluxo de efetivação e devolução do pix entre participantes diretos ou indiretos. 
 > 
@@ -192,7 +192,7 @@ Entretanto alguns manuais e regulamentações são mais importantes por possuir 
 > 
 >    * Manual operacional do DICT, recai uma grande importância por ser o local onde ficam armazenadas as bases de dados de endereçamento, Chaves pix e demais informações necessárias para as transações entre usuários. Regula ainda como sera feita o fluxo de notificações, exclusão, portabilidade, reivindicação de pose, alteração de dados, consultas, verificação de sincronismo e segurança das chaves Pix.
 
-Ainda relevante quanto a questão de segurança.O Bacen divulgou um manual, com os requisitos básicos que as instituições financeiras e demais participantes precisam seguir.
+Ainda relevante quanto a questão de segurança. O Bacen divulgou um manual, com os requisitos básicos que as instituições financeiras e demais participantes precisam seguir.
 Este manual mostra duas medidas de segurança principais que os participantes precisam seguir de modo a evitar fraudes e proteger as transações e os dados dos usuários: a criptografia e a autenticação.
 
 * **Criptografia** – é um método de proteção e privacidade que codifica uma informação de modo que só o emissor e o receptor consigam decifrá-la
@@ -205,20 +205,24 @@ Em consequencia desta, sabemos que as instituições financeiras que participare
 O Sistema de Pagamentos Instantâneos é a infraestrutura centralizada e única para liquidação de pagamentos entre instituições distintas no território nacional brasileiro. 
 O SPI faz a liquidação bruta e em tempo real de cada transação instantânea, os pagamentos são liquidados com lançamentos em contas de propósito específico que as instituições participantes diretos do sistema mantem no BC. Tais contas são denominadas Contas PI. Vale ressaltar que as transações são irrevogáveis e não se aceita lançamentos descoberto, desta forma as Contas PI não podem ter saldo negativo.
 
-Tendo em vista que o BACEN tem principalmente dois grandes sistemas que participam do ecossistema de pagamentos instantâneos: SPI e DICT Cada um com sua responsabilidade pre definida, realizam um papel chave para o funcionamento geral das transações instantâneas no Brasil. 
+Tendo em vista que o BACEN tem principalmente dois grandes sistemas que participam do ecossistema de pagamentos instantâneos: SPI e DICT Cada um com sua responsabilidade pré definida, realizam um papel chave para o funcionamento geral das transações instantâneas no Brasil. 
 Logo a Finalidade  da SPI é garantir a comunicação entre as PSP e os sistemas operados pelo BCB através da Rede Do Sistema Financeiro Nacional (RSFN) para que através desta as PSP tenham acesso ao DICT de forma direta ou indireta para garantir o pleno funcionamento do Pix em todo Brasil.
+
+> Participação no SPI
 
 ![IMAGEM PARTICIPA SPI](https://user-images.githubusercontent.com/105951194/170847706-caa1b791-cd45-4452-af18-3f4ef3f5e7ab.png)
 
-O STR é onde acontece a liquidação final de todas as operações que são transacionadas pelas instituições financeiras. Ele é responsável pela transferencias de fundos com liquidação bruta em tempo real. É nesse sistema que acontece a transferencia de balanço entre os bancos. O Sistema de Transferencia de Reserva é considerado o coração do Sistema Brasileiro de Pagamentos, por ser onde ocorre a liquidação final de todas as obrigações financeiras no Brasil.
+O STR é onde acontece a liquidação final de todas as operações que são transacionadas pelas instituições financeiras. Ele é responsável pela transferências de fundos com liquidação bruta em tempo real. É nesse sistema que acontece a transferencia de balanço entre os bancos. O Sistema de Transferência de Reserva é considerado o coração do Sistema Brasileiro de Pagamentos, por ser onde ocorre a liquidação final de todas as obrigações financeiras no Brasil.
 
-Desta forma sem a existência da STR não seria possível realizar nenhuma operação de credito através do pagamento instantâneo. Pois é nele que as contas de reservas bancarias tem sua liquidação final na operação transacional de credito.
+Desta forma sem a existência da STR não seria possível realizar nenhuma operação de crédito através do pagamento instantâneo. Pois é nele que as contas de reservas bancarias tem sua liquidação final na operação transacional de crédito.
 
 O Conselho Monetário Nacional (CMN) autorizou o BC a conceder linha de redesconto às instituições financeiras participantes diretas do SPI. São operações de compra com compromisso de revenda de títulos públicos federais registrados no Sistema Especial de Liquidação e de Custódia (Selic), com instituições financeiras participantes diretas do SPI, titulares de Conta Pagamentos Instantâneos (Conta PI).
 
 O objetivo é ofertar liquidez fora do horário de operações do Sistema de Transferência de Reservas (STR), minimizando o risco de insuficiência de recursos para os participantes. Desta forma os recursos serão liberados diretamente na conta específica para o pagamento instantâneo aos participantes do Pix, logo após o fechamento diário do STR. Fato este que garante ainda um dos conceitos fundamentais do Pix, que é estar disponível 24 horas por dia, 7 dias por semana.
 
 O acesso ao STR é feito por meio da Rede do Sistema Financeiro Nacional (RSFN) ou pela Internet. Os detentores de conta Reservas Bancárias e as câmaras e prestadores de serviços de compensação e de liquidação devem obrigatoriamente acessar o STR por meio da RSFN, e os demais podem optar entre as duas formas de acesso.
+
+>Estrutura do STR
 
 ![ESTRUTURA DO STR](https://user-images.githubusercontent.com/105951194/170847736-f5e8d78a-c197-430f-b7d4-fc0b631d3e39.png)
 
@@ -232,7 +236,3 @@ Assim, as liquidações de operações no STR é realizada por meio de lançamen
 A Conta de Liquidação obrigatória, para câmaras e prestadores de serviços de compensação e de liquidação responsáveis por sistemas de liquidação considerados sistemicamente importantes e facultativa, para as demais câmaras e prestadores de serviços de compensação e de liquidação e para as instituições autorizadas a funcionar pelo Banco Central do Brasil.
 
 Desta forma a relação principal das contas de pagamento instantâneo com a conta de liquidação ocorre por ser através dela que se realiza a Movimentação de Recursos entre o Banco Central e os as contas de Reserva Bancarias ou de Conta de Liquidação é realizada de forma exclusiva entre elas.
-
-
-
-
