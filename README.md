@@ -61,7 +61,7 @@ As partes dentro do ecossistema do Pix são divididas da seguinte forma:
 * **Provedores de Serviços:** Softwares e instituições onde o usuário possui contas de pagamento.
 * **Infraestrutura e liquidação:** O Sistemas de Pagamentos Instantâneo do Pix.
 
-## **3.Principais Fluxos Transacionais**
+## **3. Principais Fluxos Transacionais**
 
 As transações com o Pix serão realizadas principalmente a partir dos seguintes modelos:
 
