@@ -8,7 +8,7 @@ O PIX foi desenvolvido pelo Banco Central para ser um meio de pagamento amplo e 
 Os potenciais relacionados ao PIX são inúmeros, e não a toa hoje __*19 meses*__ após o seu lançamento ele é considerado um sucesso. Pois tem a capacidade comprovada de alavancar a competitividade e eficiência nas formas de pagamento. Além de baixo custo, incentiva o pagamento eletrônico do mercado de pagamento do varejo. Sem mencionar o preenchimento de diversas lacunas existentes nas formas de pagamentos disponíveis à população.
 O Pix nasceu para facilitar os métodos de compra para os consumidores e empresas.
 
-### Suas principais características são:
+> Suas principais características são:
 * Rapidez
    * Transações concluídas em segundos e recursos disponíveis ao recebedor em tempo real.
 * Barato
@@ -24,7 +24,7 @@ O Pix nasceu para facilitar os métodos de compra para os consumidores e empresa
 * Integrado
    * Disponibilidade de importantes informações para facilitar a automação de processos e a conciliação de pagamentos.
 
-### Critérios para instituições possam participar do Pix
+> Critérios para instituições possam participar do Pix
 As IPs não sujeitas à autorização de funcionamento ou em processo de autorização de funcionamento pelo Banco Central do Brasil deverão:
 - [x] aderir às regras, às condições e aos procedimentos estabelecidos no Regulamento;
 - [x] possuir capacidade técnica e operacional para cumprir os deveres e as obrigações previstos no Regulamento;
