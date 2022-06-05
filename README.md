@@ -18,7 +18,7 @@ O Pix nasceu para facilitar os métodos de compra para os consumidores e empresa
 * Aberto
    * O pagamento pode ser realizado entre instituições distintas.
 * Versátil
-   * Pode ser usado em diversas propostas, independente do tipo de pagamento ou valor da transação. Abrangendo pessoas. empresas e até mesmo o governo.
+   * Pode ser usado em diversas propostas, independente do tipo de pagamento ou valor da transação. Abrangendo pessoas, empresas e até mesmo o governo.
 * Seguranca
    * Diversos mecanismos desenvolvidos para garantir a segurança das transações.
 * Integrado
