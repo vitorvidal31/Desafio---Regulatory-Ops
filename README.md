@@ -26,7 +26,7 @@ O Pix nasceu para facilitar os métodos de compra para os consumidores e empresa
 
 > Critérios para instituições possam participar do Pix:
 
-As IPs não sujeitas à autorização de funcionamento ou em processo de autorização de funcionamento pelo Banco Central do Brasil deverão:
+As Instituições de Pagamentos não sujeitas à autorização de funcionamento ou em processo de autorização de funcionamento pelo Banco Central do Brasil deverão:
 - [x] aderir às regras, às condições e aos procedimentos estabelecidos no Regulamento;
 - [x] possuir capacidade técnica e operacional para cumprir os deveres e as obrigações previstos no Regulamento;
 - [x] possuir contrato firmado com participante responsável;
