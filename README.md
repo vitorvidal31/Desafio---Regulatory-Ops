@@ -47,7 +47,7 @@ O Pix possui três interfaces:
 * *ARQ*
     * ARQ esta é a interface usada para se fazer download de arquivos que são gerados pelo SPI (gerado a partir de mensagem) ou pelo DICT (gerado a partir requisição).
 
-O ecossistema de pagamentos instantâneos formado pelo Bacen, Sistema Pagamentos Instantâneos (SPI), que faz a liquidação das transações realizadas entre diferentes instituições participantes de forma bruta e em tempo real, sem gerar exposição financeira entre os participantes, e também pelos prestadores de serviços de pagamento participantes do arranjo aberto instituído pelo BC. 
+O ecossistema de pagamentos instantâneos formado pelo Bacen, é composto pelo Sistema Pagamentos Instantâneos (SPI), que faz a liquidação das transações realizadas entre diferentes instituições participantes de forma bruta e em tempo real, sem gerar exposição financeira entre os participantes, e também pelos prestadores de serviços de pagamento participantes do arranjo aberto instituído pelo BC. 
 Foi desenvolvido também o operador e gestor da base de dados única e centralizada de endereçamento do ecossistema (DICT). Onde ficam armazenadas as informações das chaves que servem para identificar as contas transacionais dos usuários de forma fácil e simplificada.
 
 Desta forma o Banco Central é responsável por desenvolver e gerenciar a base única e centralizada de endereçamento (DICT) e a infraestrutura única e centralizada de liquidação das transações (SPI), que funcionará 24 horas por dia, todos os dias do ano.
