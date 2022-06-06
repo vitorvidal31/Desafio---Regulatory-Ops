@@ -123,7 +123,7 @@ Além da instantaneidade, encurtar o caminho do dinheiro entre uma conta até ou
 ---
 O QR Code dinâmico é personalizável, ou seja, ele pode ser modificado. Podem ser adicionada as informações do produto, do cliente, definir vencimentos, aplicar acréscimo como juros ou até mesmo desconto para o cliente. Ele funciona como se fosse um boleto bancário. Ideal para identificar de onde vem o pagamento. 
 
-A característica que define o QR Code dinâmico é sua flexibilidade. O QR Code dinâmico, em sua estrutura interna, é configurado com uma URL que é acessada no momento de sua leitura. Essa funcionalidade abre diversas possibilidades de uso, dado que as informações trazidas pela URL podem variar em função de diversos parâmetros, como nos exemplos supracitados. 
+A característica que define o QR Code dinâmico é sua flexibilidade. O código de resposta rápido dinâmico, em sua estrutura interna, é configurado com uma URL que é acessada no momento de sua leitura. Essa funcionalidade abre diversas possibilidades de uso, dado que as informações trazidas pela URL podem variar em função de diversos parâmetros, como nos exemplos supracitados. 
 
 O QR Code dinâmico necessita de uma integração com alguma PSP. Vale ressaltar que esse serviço não é obrigatoriamente oferecidos pelos PSP. Desta forma também é possível implementar uma integração manualmente sendo configurado através do PHP. Logo esse Qr Code é gerado consumindo API do prestador de serviço de pagamento do recebedor. Diferente do QR Code estático que é gerado direto no software utilizado.
 
