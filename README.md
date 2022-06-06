@@ -109,7 +109,7 @@ Se o estabelecimento aceitar apenas chave Pix é necessário que este, verifique
 Resumidamente, o cliente pagador usa a interface de um PSP, para fazer pagamentos e transferências. Esse PSP vai recorrer ao DICT para encontrar os dados da chave informada ou seja, a agência, a conta, o dígito e outros dados importantes. Em seguida, com as informações em mãos, o PSP do cliente pagador comunica ao Banco Central a intenção em fazer o Pix. Então, o SPI entra em cena para liquidar a transação e repassar o valor para a instituição do recebedor. Por fim, o PSP do recebedor valida os dados do destinatário e responde ao SPI se aceita ou não a transferência.
 
 Embora pareça um processo extenso e complicado, tudo isso acontece em poucos segundos e o dinheiro cai na conta do recebedor no mesmo instante. 
-Além da instantaneidade, encurtar o caminho que o dinheiro faz de uma conta até outra faz com que o custo de implementação seja menor. Isso torna o Pix mais econômico tanto para o banco, quanto para o usuário final.
+Além da instantaneidade, encurtar o caminho do dinheiro entre uma conta até outra, faz com que o custo de implementação seja menor. Isso torna o Pix mais econômico tanto para o banco, quanto para o usuário final.
 
 * *Fluxo de Efetivação do Pix*
    * Fluxo de Transações entre participantes Diretos;
